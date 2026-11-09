@@ -1,0 +1,219 @@
+@import 'tailwindcss';
+@import './fonts.css';
+
+@source '../**/*.blade.php';
+@source '../**/*.tsx';
+
+@theme {
+    --font-sans: 'Inter', 'IBM Plex Sans Arabic', ui-sans-serif, system-ui, sans-serif;
+    --font-arabic: 'IBM Plex Sans Arabic', 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+    --color-brand-50: #fdf2f4;
+    --color-brand-100: #fbe6ea;
+    --color-brand-200: #f6ccd5;
+    --color-brand-300: #eea3b3;
+    --color-brand-400: #e06a84;
+    --color-brand-500: #cc3d5c;
+    --color-brand-600: #b71f3c;
+    --color-brand-700: #98182f;
+    --color-brand-800: #7d172b;
+    --color-brand-900: #691828;
+
+    --color-mist-50: #e8f6f8;
+    --color-mist-100: #d5edf1;
+    --color-mist-200: #bde2e8;
+    --color-mist-300: #96d0d9;
+
+    --color-plum-50: #f4effb;
+    --color-plum-100: #e5d9f6;
+    --color-plum-200: #cbb3ee;
+    --color-plum-300: #a985e0;
+    --color-plum-400: #8a5acf;
+    --color-plum-500: #6d3bb5;
+    --color-plum-600: #552c93;
+    --color-plum-700: #422274;
+    --color-plum-800: #2f1856;
+    --color-plum-900: #201040;
+    --color-plum-950: #130a2b;
+
+    --animate-float: float 7s ease-in-out infinite;
+    --animate-ken-burns: ken-burns 22s ease-in-out infinite alternate;
+    --animate-orbit: orbit 60s linear infinite;
+    --animate-orbit-reverse: orbit 60s linear infinite reverse;
+    --animate-orbit-fast: orbit 36s linear infinite;
+    --animate-orbit-fast-reverse: orbit 36s linear infinite reverse;
+    --animate-circle-move: circle-move 16s linear infinite;
+    --animate-wave: wave 18s linear infinite;
+    --animate-wave-slow: wave 28s linear infinite reverse;
+    --animate-sheet-in: sheet-in 900ms cubic-bezier(0.22, 1, 0.36, 1);
+    --animate-sheet-out: sheet-out 700ms cubic-bezier(0.65, 0, 0.35, 1);
+    --animate-fade-in: fade-in 700ms ease-out;
+    --animate-fade-out: fade-out 600ms ease-in;
+    --animate-rise-in: rise-in 1100ms cubic-bezier(0.22, 1, 0.36, 1) both;
+    --animate-slide-in-right: slide-in-right 1200ms cubic-bezier(0.22, 1, 0.36, 1) both;
+    --animate-pulse-ring: pulse-ring 2.6s ease-out infinite;
+    --animate-blob: blob 18s ease-in-out infinite alternate;
+    --animate-blob-reverse: blob 22s ease-in-out infinite alternate-reverse;
+    --animate-bob: bob 5s ease-in-out infinite;
+    --animate-orbit-slow: orbit 120s linear infinite;
+    --animate-orbit-slow-reverse: orbit 150s linear infinite reverse;
+
+    @keyframes rise-in {
+        from {
+            opacity: 0;
+            transform: translateY(48px);
+        }
+    }
+    @keyframes slide-in-right {
+        from {
+            opacity: 0;
+            transform: translateX(90px);
+        }
+    }
+    @keyframes pulse-ring {
+        0% {
+            box-shadow: 0 0 0 0 rgb(183 31 60 / 0.45);
+        }
+        70%,
+        100% {
+            box-shadow: 0 0 0 18px rgb(183 31 60 / 0);
+        }
+    }
+    @keyframes blob {
+        from {
+            transform: translate3d(0, 0, 0) scale(1);
+        }
+        to {
+            transform: translate3d(8vw, -6vh, 0) scale(1.25);
+        }
+    }
+    @keyframes bob {
+        50% {
+            transform: translateY(-8px) rotate(1.5deg);
+        }
+    }
+
+    @keyframes float {
+        50% {
+            transform: translateY(-14px);
+        }
+    }
+    @keyframes ken-burns {
+        from {
+            transform: scale(1.02) translate3d(0, 0, 0);
+        }
+        to {
+            transform: scale(1.2) translate3d(-2.5%, -2%, 0);
+        }
+    }
+    @keyframes orbit {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes circle-move {
+        from {
+            transform: rotate(0deg) translateX(14px) rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg) translateX(14px) rotate(-360deg);
+        }
+    }
+    @keyframes wave {
+        to {
+            transform: translateX(-50%);
+        }
+    }
+    @keyframes sheet-in {
+        from {
+            transform: translateY(-100%);
+        }
+    }
+    @keyframes sheet-out {
+        to {
+            transform: translateY(-100%);
+        }
+    }
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+    }
+    @keyframes fade-out {
+        to {
+            opacity: 0;
+        }
+    }
+}
+
+@utility btn-shine {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+
+    &::after {
+        content: '';
+        position: absolute;
+        inset-block: 0;
+        inset-inline-start: -60%;
+        width: 40%;
+        background: linear-gradient(100deg, transparent, rgb(255 255 255 / 0.45), transparent);
+        transform: skewX(-20deg);
+        transition: inset-inline-start 0.8s ease;
+        z-index: -1;
+        pointer-events: none;
+    }
+    &:hover::after {
+        inset-inline-start: 120%;
+    }
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    html[dir='rtl'] body {
+        font-family: var(--font-arabic);
+    }
+
+    :focus-visible {
+        outline: 2px solid var(--color-brand-600);
+        outline-offset: 2px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        html {
+            scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+            animation-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+        }
+    }
+}
+
+/* Arabic typography. Unlayered on purpose, so it wins over the Tailwind utilities used in the components:
+   letter-spacing breaks the joined letters, and Arabic needs more line height than Latin text. */
+html[dir='rtl'] * {
+    letter-spacing: 0;
+}
+
+html[dir='rtl'] :is(p, li, blockquote, figcaption) {
+    line-height: 1.95;
+}
+
+html[dir='rtl'] :is(h1, h2, h3, h4) {
+    line-height: 1.4;
+}
+
+:is(h1, h2, h3, h4) {
+    text-wrap: balance;
+}
+
+:is(p, li, blockquote) {
+    text-wrap: pretty;
+}
