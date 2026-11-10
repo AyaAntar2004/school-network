@@ -28,6 +28,8 @@ const en = {
     'nav.contact': 'Contact',
     'nav.join': 'Join the Network',
     'nav.openMenu': 'Open menu',
+    'nav.home': 'Home',
+    'nav.back': 'Back',
     'nav.closeMenu': 'Close menu',
     'nav.menuTitle': 'Menu',
 
@@ -130,9 +132,11 @@ const en = {
     'events.count': 'activities',
     'events.shortCount': 'event(s)',
     'events.jump': 'Jump to a year',
+    'events.allYears': 'All years',
+    'events.year': 'Year',
     'events.number': 'Activity',
     'events.undated': 'Date not recorded',
-    'events.homeEyebrow': 'Our latest activities',
+    'events.homeEyebrow': 'Our latest events',
     'events.homeTitle': 'Recent events',
     'events.all': 'View all events',
 

@@ -46,7 +46,7 @@ export const guidePages: Record<GuidePageKey, GuidePage> = {
             'A collaborative platform for educators and schools committed to excellence and equity in education.',
             'منصة تعاونية للمربّين والمدارس الملتزمة بالتميّز والعدالة في التعليم.',
         ),
-        image: '/images/slides/slide-1.jpg',
+        image: '/images/photos/6.jpg',
         blocks: [
             {
                 type: 'quote',
@@ -145,7 +145,7 @@ export const guidePages: Record<GuidePageKey, GuidePage> = {
         eyebrow,
         title: lz('History of the network', 'تاريخ الشبكة'),
         lead: lz('From an association in 2001 to a network that served as a catalyst across the country.', 'من جمعية عام 2001 إلى شبكة كانت حافزًا للتوسّع في أنحاء البلاد.'),
-        image: '/images/castle-2.jpg',
+        image: '/images/photos/7.jpg',
         blocks: [
             {
                 type: 'steps',
@@ -180,7 +180,7 @@ export const guidePages: Record<GuidePageKey, GuidePage> = {
                     'The network’s work revolves around a specific theme chosen through a vote during the general assembly meeting. This theme is then translated into activities such as murals, calendars, workshops for teachers, various activities for learners, and lectures aimed at school principals.',
                     'يدور عمل الشبكة حول موضوع محدد يُختار بالتصويت خلال اجتماع الجمعية العمومية. ثم يُترجم هذا الموضوع إلى أنشطة مثل الجداريات والتقاويم وورش المعلمين وأنشطة متنوعة للمتعلّمين ومحاضرات موجّهة إلى مديري المدارس.',
                 ),
-                image: '/images/slides/slide-5.jpg',
+                image: '/images/photos/13.jpg',
             },
         ],
     },
@@ -189,7 +189,7 @@ export const guidePages: Record<GuidePageKey, GuidePage> = {
         eyebrow,
         title: lz('Vision & Mission', 'الرؤية والرسالة'),
         lead: lz('Educational philosophy, vision, mission, goals and objectives.', 'الفلسفة التربوية والرؤية والرسالة والأهداف والغايات.'),
-        image: '/images/slides/slide-5.jpg',
+        image: '/images/photos/8.jpg',
         blocks: [
             { type: 'heading', title: lz('Educational philosophy', 'الفلسفة التربوية') },
             {
@@ -206,7 +206,7 @@ export const guidePages: Record<GuidePageKey, GuidePage> = {
                     'Our vision is to create a vibrant and interconnected community of regional schools, united by a common purpose to elevate educational excellence and equity.',
                     'رؤيتنا بناء مجتمع نابض ومترابط من مدارس المنطقة، يوحّدها هدف مشترك هو الارتقاء بالتميّز التربوي والعدالة.',
                 ),
-                image: '/images/castle-2.jpg',
+                image: '/images/photos/7.jpg',
             },
             {
                 type: 'text',
@@ -229,7 +229,7 @@ export const guidePages: Record<GuidePageKey, GuidePage> = {
                     'Connecting Minds, Nurturing Futures! Our mission is to establish a collaborative network of like-minded schools within the same region, fostering an environment of shared knowledge, innovation, and mutual support.',
                     'نربط العقول ونرعى المستقبل! رسالتنا إنشاء شبكة تعاونية من المدارس المتقاربة الفكر في المنطقة نفسها، تعزّز بيئة من المعرفة المشتركة والابتكار والدعم المتبادل.',
                 ),
-                image: '/images/slides/slide-3.jpg',
+                image: '/images/photos/12.jpg',
             },
             {
                 type: 'text',
@@ -291,7 +291,7 @@ export const guidePages: Record<GuidePageKey, GuidePage> = {
         eyebrow,
         title: lz('Who we are: governance model', 'من نحن: نموذج الحوكمة'),
         lead: lz('Six features of effective governance, and who carries which role.', 'ست سمات للحوكمة الفعّالة، ومن يتولى أي دور.'),
-        image: '/images/slides/slide-3.jpg',
+        image: '/images/photos/18.jpg',
         blocks: [
             { type: 'heading', title: lz('Effective governance is based on six key features', 'ترتكز الحوكمة الفعّالة على ست سمات رئيسية') },
             {
@@ -482,7 +482,7 @@ export const guidePages: Record<GuidePageKey, GuidePage> = {
             'Ten strategies that keep the network sustainable, reinforce quality education and strengthen collaboration among member schools.',
             'عشر استراتيجيات تحافظ على استدامة الشبكة وتعزّز جودة التعليم وتقوّي التعاون بين المدارس الأعضاء.',
         ),
-        image: '/images/slides/slide-4.jpg',
+        image: '/images/photos/9.jpg',
         blocks: [
             {
                 type: 'text',
@@ -632,7 +632,7 @@ export const guidePages: Record<GuidePageKey, GuidePage> = {
         eyebrow,
         title: lz('Belonging to the network', 'الانتماء إلى الشبكة'),
         lead: lz('What it means to be a member, what you gain, and what you promise.', 'ماذا تعني العضوية، وما الذي تكسبونه، وما الذي تلتزمون به.'),
-        image: '/images/schools/s5.jpg',
+        image: '/images/photos/19.jpg',
         blocks: [
             { type: 'heading', title: lz('What does it mean to be a member?', 'ماذا تعني العضوية؟') },
             {
@@ -707,7 +707,7 @@ export const guidePages: Record<GuidePageKey, GuidePage> = {
                     'Saida Schools Network membership is free of charge for all members. Applications, certification, and membership renewal are all free of charge.',
                     'عضوية شبكة مدارس صيدا مجانية لجميع الأعضاء. والتقديم والاعتماد وتجديد العضوية كلها مجانية.',
                 ),
-                image: '/images/schools/s2.jpg',
+                image: '/images/photos/14.jpg',
             },
             { type: 'heading', title: lz('Commitment to the network', 'الالتزام تجاه الشبكة') },
             {
@@ -736,7 +736,7 @@ export const guidePages: Record<GuidePageKey, GuidePage> = {
         eyebrow,
         title: lz('Communication, advocacy and resources', 'التواصل والمناصرة والمصادر'),
         lead: lz('How the network shares its story, the policies it supports and the sources it draws on.', 'كيف تروي الشبكة قصتها، والسياسات التي تدعمها، والمصادر التي تستند إليها.'),
-        image: '/images/slides/slide-2.jpg',
+        image: '/images/photos/20.jpg',
         blocks: [
             { type: 'heading', title: lz('Communication', 'التواصل') },
             {

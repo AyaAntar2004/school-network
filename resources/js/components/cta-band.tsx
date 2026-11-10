@@ -29,7 +29,7 @@ export function CtaBand({ title, text }: CtaBandProps) {
     return (
         <section className="px-4 py-16 sm:px-6 lg:px-8">
             <div className="relative mx-auto flex min-h-[28rem] max-w-7xl flex-col items-center justify-center overflow-hidden rounded-[3rem] px-6 py-16 text-white sm:rounded-[4rem]">
-                <KenBurnsImage src="/images/castle-2.jpg" origin="25% 60%" />
+                <KenBurnsImage src="/images/photos/7.jpg" origin="25% 60%" />
                 <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-plum-950/90 via-plum-900/70 to-plum-900/40" />
                 <div className="relative w-full max-w-2xl text-center">
                     <h2 className="text-3xl font-bold sm:text-5xl">{title}</h2>

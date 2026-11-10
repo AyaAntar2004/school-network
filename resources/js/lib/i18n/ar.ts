@@ -30,6 +30,8 @@ const ar: Record<keyof typeof en, string> = {
     'nav.contact': 'اتصل بنا',
     'nav.join': 'انضمّوا إلى الشبكة',
     'nav.openMenu': 'فتح القائمة',
+    'nav.home': 'الرئيسية',
+    'nav.back': 'رجوع',
     'nav.closeMenu': 'إغلاق القائمة',
     'nav.menuTitle': 'القائمة',
 
@@ -131,6 +133,8 @@ const ar: Record<keyof typeof en, string> = {
     'events.count': 'نشاطًا',
     'events.shortCount': 'فعالية',
     'events.jump': 'انتقلوا إلى سنة',
+    'events.allYears': 'كل السنوات',
+    'events.year': 'السنة',
     'events.number': 'النشاط',
     'events.undated': 'التاريخ غير مسجّل',
     'events.homeEyebrow': 'أحدث أنشطتنا',

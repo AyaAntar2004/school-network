@@ -86,10 +86,10 @@ export default function Home({
                 <div className="grid items-center gap-16 lg:grid-cols-2">
                     <Reveal from="left" className="relative mx-auto aspect-square w-full max-w-md">
                         <div className="relative size-full overflow-hidden rounded-full ring-8 ring-white">
-                            <KenBurnsImage src="/images/slides/slide-1.jpg" origin="40% 45%" />
+                            <KenBurnsImage src="/images/photos/11.jpg" origin="40% 45%" />
                         </div>
                         <div className="absolute -bottom-4 -end-4 size-2/5 animate-bob overflow-hidden rounded-full ring-8 ring-mist-50 sm:-end-10">
-                            <KenBurnsImage src="/images/slides/slide-3.jpg" origin="55% 35%" />
+                            <KenBurnsImage src="/images/photos/17.jpg" origin="55% 35%" />
                         </div>
                     </Reveal>
                     <Reveal from="right" delay={150}>
@@ -132,7 +132,7 @@ export default function Home({
 
             <section className="px-4 py-24 sm:px-6 lg:px-8">
                 <Reveal className="relative isolate mx-auto flex min-h-[32rem] max-w-7xl items-center overflow-hidden rounded-[3rem] p-8 text-white sm:rounded-[4rem] sm:p-16">
-                    <KenBurnsImage src="/images/slides/slide-5.jpg" origin="30% 70%" />
+                    <KenBurnsImage src="/images/photos/8.jpg" origin="30% 70%" />
                     <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-plum-950/90 via-plum-900/70 to-plum-900/20 rtl:bg-gradient-to-l" />
                     <div className="relative flex w-full flex-col gap-10 lg:flex-row lg:items-center lg:justify-between rtl:lg:flex-row-reverse">
                     <div className="max-w-xl">

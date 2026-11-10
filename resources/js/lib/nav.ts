@@ -60,17 +60,17 @@ export interface PhotoCard {
 
 /** Photo cards shown beside the menu links. */
 export const menuCards: PhotoCard[] = [
-    { caption: 'menu.cap.directory', title: 'menu.card.schools', href: '/schools', image: '/images/schools/s4.jpg' },
-    { caption: 'menu.cap.theme', title: 'menu.card.theme', href: '/annual-theme', image: '/images/slides/slide-5.jpg' },
-    { caption: 'menu.cap.training', title: 'menu.card.training', href: '/professional-development', image: '/images/slides/slide-3.jpg' },
-    { caption: 'menu.cap.news', title: 'menu.card.news', href: '/news', image: '/images/castle-2.jpg' },
+    { caption: 'menu.cap.directory', title: 'menu.card.schools', href: '/schools', image: '/images/photos/17.jpg' },
+    { caption: 'menu.cap.theme', title: 'menu.card.theme', href: '/annual-theme', image: '/images/photos/13.jpg' },
+    { caption: 'menu.cap.training', title: 'menu.card.training', href: '/professional-development', image: '/images/photos/12.jpg' },
+    { caption: 'menu.cap.news', title: 'menu.card.news', href: '/news', image: '/images/photos/7.jpg' },
 ];
 export const menuJoinCard = { caption: 'menu.cap.join', title: 'menu.card.join', href: '/join' } as const satisfies Omit<PhotoCard, 'image'>;
 
 /** Tall photo cards for the "areas of work" section on the home page. */
 export const exploreCards: { title: TranslationKey; href: string; image: string }[] = [
-    { title: 'nav.schools', href: '/schools', image: '/images/schools/s3.jpg' },
-    { title: 'nav.theme', href: '/annual-theme', image: '/images/slides/slide-5.jpg' },
-    { title: 'nav.development', href: '/professional-development', image: '/images/slides/slide-3.jpg' },
-    { title: 'nav.resources.observatory', href: '/resources/observatory', image: '/images/slides/slide-4.jpg' },
+    { title: 'nav.schools', href: '/schools', image: '/images/photos/15.jpg' },
+    { title: 'nav.theme', href: '/annual-theme', image: '/images/photos/13.jpg' },
+    { title: 'nav.development', href: '/professional-development', image: '/images/photos/12.jpg' },
+    { title: 'nav.resources.observatory', href: '/resources/observatory', image: '/images/photos/5.jpg' },
 ];

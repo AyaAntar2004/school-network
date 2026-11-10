@@ -1,5 +1,6 @@
 import { Link, router, usePage } from '@inertiajs/react';
 import type { PropsWithChildren } from 'react';
+import { PageNavButtons } from '@/components/page-nav-buttons';
 import { Button } from '@/components/ui/button';
 import { useTranslation } from '@/lib/i18n';
 import type { SharedProps } from '@/types/ssn';
@@ -13,14 +14,12 @@ export default function AdminLayout({ children }: PropsWithChildren) {
         <div dir={dir} lang={locale} className="min-h-screen bg-mist-50 text-stone-800">
             <header className="border-b border-plum-900/10 bg-white">
                 <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-4">
-                    <div className="flex items-center gap-6">
+                    <div className="flex flex-wrap items-center gap-6">
+                        <PageNavButtons homeHref="/admin/events" />
                         <p className="text-lg font-bold text-plum-950">{t('admin.title')}</p>
                         <Link href="/admin/events" className="text-sm font-semibold text-brand-700 hover:text-brand-900">
                             {t('admin.events')}
                         </Link>
-                        <a href="/" className="text-sm text-stone-600 hover:text-brand-700">
-                            {t('admin.viewSite')}
-                        </a>
                     </div>
                     <div className="flex items-center gap-3 text-sm">
                         <button

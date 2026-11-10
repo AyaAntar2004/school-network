@@ -13,7 +13,7 @@ Route::get('/', fn () => Inertia::render('home', [
 ]))->name('home');
 
 Route::get('/events', fn () => Inertia::render('events', [
-    'events' => Event::forPage()->orderBy('year')->orderBy('id')->get(),
+    'events' => Event::forPage()->orderByDesc('year')->orderByDesc('id')->get(),
 ]))->name('events');
 
 Route::post('/contact-message', function (Request $request) {
@@ -43,6 +43,7 @@ foreach ($guidePages as $uri => $page) {
     Route::get($uri, fn () => Inertia::render('guide', ['page' => $page]))->name("guide.$page");
 }
 
+/** Admin portal: a separate area at /admin, not linked from the public site, behind a login. */
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('login', [AuthController::class, 'create'])->name('login');
     Route::post('login', [AuthController::class, 'store'])->middleware('throttle:6,1');

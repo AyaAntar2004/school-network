@@ -3,6 +3,7 @@ import { Link, usePage } from '@inertiajs/react';
 import { ArrowRight, Menu, X } from 'lucide-react';
 import { AmbientBackground } from '@/components/ambient-background';
 import { LanguageSwitcher } from '@/components/language-switcher';
+import { PageNavButtons } from '@/components/page-nav-buttons';
 import { SocialLinks } from '@/components/social-links';
 import { SsnWordmark } from '@/components/ssn-wordmark';
 import { Sheet, SheetClose, SheetContent, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
@@ -241,6 +242,7 @@ export default function SiteLayout({ children }: PropsWithChildren) {
             </a>
 
             <FloatingMenu />
+            <PageNavButtons className="fixed left-[4.75rem] top-[1.375rem] z-40 sm:left-24 sm:top-[1.875rem]" />
 
             <main id="main">{children}</main>
             <Footer />

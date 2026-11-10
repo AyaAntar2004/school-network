@@ -10,9 +10,15 @@ class AdminSeeder extends Seeder
 {
     public function run(): void
     {
+        if (! env('ADMIN_PASSWORD')) {
+            $this->command?->error('Set ADMIN_PASSWORD in .env first.');
+
+            return;
+        }
+
         User::updateOrCreate(
             ['email' => env('ADMIN_EMAIL', 'admin@example.org')],
-            ['name' => 'Administrator', 'password' => env('ADMIN_PASSWORD', 'ChangeMe-2026')],
+            ['name' => 'Administrator', 'password' => env('ADMIN_PASSWORD')],
         );
     }
 }
